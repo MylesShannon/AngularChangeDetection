@@ -1,0 +1,14 @@
+{{ check() }}
+<div class="node">
+  <div class="title">Two (OnPush)</div>
+  <div class="actions">
+    <app-button (click)="cd.detectChanges()">detectChanges</app-button>
+    <app-button (click)="cd.markForCheck()">markForCheck</app-button>
+    <app-button (click)="cd.detach()">detach</app-button>
+    <app-button (click)="cd.reattach()">reattach</app-button>
+  </div>
+</div>
+<div class="children">
+  <app-four></app-four>
+  <app-five></app-five>
+</div>
