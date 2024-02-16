@@ -13,6 +13,8 @@ import { HighlightService } from '../highlight.service';
 })
 export class OneComponent {
 
+  twoInput = false;
+
   constructor(private el: ElementRef, private highlight: HighlightService, public cd: ChangeDetectorRef) { }
 
   check() {

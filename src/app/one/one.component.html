@@ -5,9 +5,10 @@
     <app-button (click)="cd.detectChanges()">detectChanges</app-button>
     <app-button (click)="cd.detach()">detach</app-button>
     <app-button (click)="cd.reattach()">reattach</app-button>
+    <app-button (click)="twoInput = !twoInput">Change Two Input</app-button>
   </div>
 </div>
 <div class="children">
-  <app-two></app-two>
+  <app-two [input]="twoInput"></app-two>
   <app-three></app-three>
 </div>

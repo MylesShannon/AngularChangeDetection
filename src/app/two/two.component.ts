@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
 import { FourComponent } from '../four/four.component';
 import { FiveComponent } from '../five/five.component';
@@ -13,6 +13,7 @@ import { HighlightService } from '../highlight.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TwoComponent {
+  @Input() input = false;
 
   constructor(private el: ElementRef, private highlight: HighlightService, public cd: ChangeDetectorRef) { }
 
